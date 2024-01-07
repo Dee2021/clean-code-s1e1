@@ -1,28 +1,28 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header img {
   width: 100%;
 }
-.aaa .more_inf {
+.header .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .header {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -35,6 +35,7 @@ body {
 .task-row-wrapper {
   display: flex;
 }
+/* resetting the default styles */
 ul {
   margin: 0;
   padding: 0px;
@@ -50,15 +51,20 @@ button {
 button {
   background: none;
   border: 0px;
-  color: #888;
   font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+
+.button-color{
+  color: #888;
+}
+
+.button-color:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 h3,
 label[for="new-task"] {
@@ -141,11 +147,15 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.editMode input[type="text"] {
+ul li.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
+
+/* TODO: only p3.4 starting from .button-color which is not working in js
+3.5  3.6 3.7 3.8+
+*/
